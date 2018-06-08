@@ -1,6 +1,6 @@
 const express = require('express')//install express
 const app = express() //function for express
-const dogsRouter = require('./people/router')
+const peopleRouter = require('./people/router')
 
 const server = app.listen(3000, () => console.log('Express API listening on port 3000'))
 
