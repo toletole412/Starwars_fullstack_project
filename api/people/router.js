@@ -14,7 +14,7 @@ router.get("/people", (req, res, next) => {
         function(error, response, body) {
           if (!error && response.statusCode === 200) {
             res.json({
-              people: body
+              people: body.results
             })
             res.end()
           }
